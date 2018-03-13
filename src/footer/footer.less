@@ -1,0 +1,227 @@
+@import "../variables/variables.less";
+
+.footer {
+  max-width: 1550px;
+  width: 100%;
+  background-color: @footer-bgc;
+  padding-bottom: 3rem;
+  padding-top: 1.56rem;
+  border-top: 5px solid @footer-border-top-color;
+
+  &__nav-bar {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+
+    &__logo-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 0;
+      align-items: center;
+
+      .screen-xs ({
+        justify-content: center;
+      });
+
+      .screen-sm ({
+        justify-content: center;
+      });
+    }
+
+    &__logo {
+
+      > svg {
+        fill: @footer-logo-color;
+      }
+    }
+
+    &__title-wrapper {
+      padding-left: 0.7rem;
+    }
+
+    &__title {
+      font-family: 'Nexa-Black',sans-serif;
+      font-weight: 700;
+      font-size: 2.4375rem;
+      color: @footer-logo-color;
+      line-height: 2rem;
+    }
+
+    &__slogan {
+      font-family: 'PT Sans', sans-serif;
+      font-style: italic;
+      font-size: 0.75rem;
+      color: @footer-logo-color;
+    }
+
+    &__list {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+
+      .screen-xs ({
+        justify-content: center;
+      });
+
+      .screen-sm ({
+        justify-content: center;
+      });
+    }
+
+    &__item {
+      margin-top: 1.5rem;
+      width: content-box;
+      padding: 0 1.5rem;
+      height: 10px;
+      text-align: right;
+      border-left: 1px solid #767676;
+
+      &:first-child {
+        border-left: none;
+      }
+
+      &:last-child {
+        padding-right: 0;
+
+        .screen-xs ({
+          padding-right: 0.5rem;
+        });
+
+        .screen-sm ({
+          padding-right: 0.5rem;
+        });
+      }
+
+      .screen-xs ({
+        font-size: 2vw;
+        text-align: center;
+        width: 100%;
+        padding: 0 0.5rem ;
+      });
+
+      .screen-sm ({
+        font-size: 2vw;
+        text-align: center;
+        width: 100%;
+        padding: 0 0.5rem ;
+      });
+    }
+
+    &__link {
+      width: content-box;
+      position: relative;
+      top: -6px;
+      display: inline-block;
+      font-family: "Nexa-Bold", sans-serif;
+      color: @footer-nav-bar-links-color;
+      font-size: 0.75rem;
+      padding-bottom: 0.5rem;
+
+      &:hover {
+        text-decoration: none;
+        color: @footer-nav-bar-links-color;
+        border-bottom: 5px solid @footer-border-top-color;
+        box-sizing: padding-box;
+      }
+    }
+  }
+
+  &__social {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2.25rem;
+
+    &__text-wrapper {
+      padding-left: 0;
+
+      .screen-xs ({
+        padding-left: 15px;
+        margin: 0 auto;
+      });
+
+      .screen-sm ({
+        padding-left: 15px;
+        margin: 0 auto;
+      });
+    }
+
+    &__text {
+      font-family: "Helvetica",sans-serif;
+      font-size: 0.75rem;
+      color: @footer-social-text-color;
+      line-height: 1.437rem;
+    }
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 1.3rem;
+
+      .screen-xs ({
+        margin-top: 1rem;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      });
+
+      .screen-sm ({
+        margin-top: 1rem;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      });
+    }
+
+    &__item {
+      padding-left: 2rem;
+      color: @footer-social-text-color;
+
+      .screen-xs ({
+        padding-left: 1rem;
+      });
+
+      .screen-sm ({
+        padding-left: 1rem;
+      });
+
+      .screen-md ({
+        padding-left: 0.8rem;
+      });
+
+      &:first-child {
+        .screen-xs ({
+          padding-left: 0;
+        });
+
+        .screen-sm ({
+          padding-left: 0;
+        });
+      }
+
+      > i {
+        font-size: 0.75rem;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: @footer-social-text-color;
+      font-family: "PT Sans",sans-serif;
+      font-size: 0.75rem;
+      padding-left: 0.5rem;
+
+      &:hover {
+        text-decoration: none;
+        color: @footer-social-links-color;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,113 @@
+@import "../variables/variables.less";
+
+.header__nav-bar {
+  position: relative;
+  top: 1rem;
+  z-index: 2;
+  max-width: 945px;
+  height: 100%;
+  margin: 0 auto;
+
+  &__list {
+    width: 100%;
+    position: relative;
+    height: 125px;
+    display: flex;
+    justify-content: stretch;
+    list-style: none;
+    margin-top: 1.1875rem;
+    margin-bottom: 0;
+    background-color: @header-accent-text-color;
+
+    .screen-xs({
+      height: 65px;
+    });
+
+    .screen-sm({
+      height: 95px;
+    });
+
+    &-item {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      width: 16.666668%;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 1.7rem;
+      background: linear-gradient(to top, #dfdfdf, #e7e7e7, #f8f8f8, #fff);
+      border-right: 1px solid @header-nav-bar-border-right;
+
+
+      &:hover {
+        background-color: #FFFFFF;
+        bottom: 5px;
+        transition: 0.3s;
+
+      }
+
+
+      &:last-child {
+        border-right: @header-nav-bar-bgc;
+      }
+
+      > svg {
+        position: absolute;
+        top: 30%;
+        z-index: 5;
+        fill: @header-general-text-color;
+      }
+
+
+
+      &:hover > svg,
+      &:hover > a {
+        fill: @header-accent-text-color;
+        color: @header-accent-text-color;
+        text-decoration: none;
+      }
+
+      &:active > svg {
+        fill: @header-accent-text-color;
+      }
+
+      .screen-xs({
+        height: 60px;
+        padding: 0.5rem;
+      });
+
+      .screen-sm({
+        height: 90px;
+        padding: 0.9rem;
+      });
+    }
+  }
+
+
+  &__link {
+    position: absolute;
+    bottom: 20%;
+    font-size: 1.06rem;
+    font-family: "PT Sans",sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: @header-general-text-color;
+
+    .screen-xs({
+      display: none;
+    });
+
+    .screen-sm({
+      font-size: 2.5vw;
+      bottom: 15%;
+    });
+
+
+    &:focus {
+      text-decoration: none;
+      color: @header-general-text-color;
+    }
+  }
+}

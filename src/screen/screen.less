@@ -1,0 +1,133 @@
+@import "../variables/variables.less";
+
+.screen {
+  position: relative;
+  max-width: 1550px;
+  width: 100%;
+  background-color: @screen-section-bgc;
+
+
+  &-wrapper {
+    max-width: 1255px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__img {
+    padding-top: 3.5625rem;
+    width: 100%;
+
+    .screen-xs ({
+      padding-top: 5vh;
+    });
+
+    .screen-sm ({
+      padding-top: 5vh;
+    });
+  }
+
+  &__icons {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__icon {
+      margin-top: 5vh;
+      width: 10%;
+    }
+
+    &__line {
+      width: 10vw;
+      height: 4px;
+      background-color: #FFF;
+      border-radius: 1rem;
+      margin: 0 3vw;
+      margin-top: 5vh;
+
+
+      .screen-xs ({
+        height: 2px;
+        width: 15vw;
+      });
+
+      .screen-sm ({
+        height: 3px;
+        width: 15vw;
+      });
+
+      .screen-md ({
+        height: 3px;
+        width: 15vw;
+      });
+
+    }
+
+  }
+
+  &__slogan {
+    max-width: 1520px;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    bottom: 12%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    .screen-xs ({
+      bottom: 5%;
+    });
+    
+    &__title {
+      width: 100%;
+      margin: 0;
+      color: @screen-slogan-title-color;
+      font-family: "Nexa-Book",sans-serif;
+      font-size: 2.25rem;
+
+      .screen-xs ({
+        margin-top: 7vh;
+        padding-top: 3vh;
+        font-size: 3.5vw;
+      });
+      .screen-sm ({
+        padding-top: 3vh;
+        font-size: 3.5vw;
+      });
+
+      .screen-md ({
+        padding-top: 2vh;
+        font-size: 3.5vw;
+      });
+    }
+
+    &__sub-title {
+      margin: 0;
+      padding-top: 1rem;
+      color: @screen-slogan-sub-title-color;
+      font-family: "Nexa-Bold",sans-serif;
+      font-size: 0.875rem;
+
+      .screen-xs ({
+        padding-top: 2vh;
+        font-size: 2vw;
+      });
+      .screen-sm ({
+        padding-top: 2vh;
+        font-size: 1.5vw;
+      });
+
+      .screen-md ({
+        padding-top: 2vh;
+        font-size: 1.5vw;
+      });
+    }
+  }
+}

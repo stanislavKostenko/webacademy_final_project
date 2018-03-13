@@ -1,0 +1,33 @@
+@import "~font-awesome/less/font-awesome.less";
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Quicksand:300,400,500,700');
+@import url("http://fonts.fontstorage.com/import/nexa.css");
+@import "./font-face/nexa_font-face.less";
+
+
+@import "./variables/variables.less";
+@import "./mixin/media_query_mixins.less";
+
+@import "header/header_top-bar.less";
+@import "./header/header_nav-bar.less";
+@import "./main-banner/main-banner.less";
+@import "./map-section/map.less";
+@import "./screen/screen.less";
+@import "./team/team.less";
+@import "./team/team_slider.less";
+@import "./articles/articles.less";
+@import "./footer/footer.less";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: @header-bgc;
+}
